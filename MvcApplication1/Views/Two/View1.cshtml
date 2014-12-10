@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+@{
+    var viewdata = ViewData["objInfo"] as MvcApplication1.Controllers.TwoController.MyClass;
+    var tempdata = TempData["info"] as MvcApplication1.Controllers.TwoController.MyClass;
+    var vdata = ViewData["obj"] as List<MvcApplication1.Controllers.TwoController.MyClass>;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+</head>
+<body>
+    <div>
+        <h1>@ViewBag</h1>
+        <h1>@ViewBag.info1</h1>
+        <h1>@ViewBag.info2</h1>
+        <h1>@ViewBag.info3</h1>
+
+        <h2>@ViewData["color"]</h2>
+        <h2>@ViewData["game"]</h2>
+        <h2>@ViewData["value"]</h2>
+
+@*        <br />Using TempData:
+        <h3>
+            @tempdata.Value1<br />
+            @tempdata.Value2
+        </h3>*@
+
+@*        <br />Using ViewData:
+        <h4>@viewdata.Value1<br />
+            @viewdata.Value2
+        </h4>*@
+
+        @foreach (var item in vdata)
+        {
+            @item.Value1<br />
+            @item.Value2
+            <br />
+        }
+    </div>
+</body>
+</html>

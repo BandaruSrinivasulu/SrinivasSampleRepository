@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetDetails</title>
+</head>
+<body>
+    <div>
+        <table border="1" style="border-color:green;">
+            @foreach (var item in ViewData["info"] as List<MvcApplication1.Controllers.ThreeController.Employee>)
+            {
+                <tr>
+                    <td>@item.Eno</td>
+                    <td>@item.Ename</td>
+                    <td>@item.Salary</td>
+                    <td>@item.City</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
