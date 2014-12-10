@@ -278,6 +278,7 @@
     <Content Include="Views\Two\View1.cshtml" />
     <Content Include="Views\Three\GetDetailsUsingViewData.cshtml" />
     <Content Include="Views\Three\GetDetailsUsingTempData.cshtml" />
+    <Content Include="Views\NewView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
