@@ -163,6 +163,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Controllers\OneController.cs" />
+    <Compile Include="Controllers\TestAddedController.cs" />
     <Compile Include="Controllers\ThreeController.cs" />
     <Compile Include="Controllers\TwoController.cs" />
     <Compile Include="Global.asax.cs">
